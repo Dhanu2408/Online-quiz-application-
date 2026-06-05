@@ -1,419 +1,154 @@
 Online Quiz Application
-
 Project Title Finalization
-
 Project Title
 
 Online Quiz Application
 
 Description
 
-The project title "Online Quiz Application" was selected because it accurately represents the core functionality of the system. The application is designed to provide a digital platform where users can participate in quizzes, assess their knowledge, and receive instant feedback. The title reflects the educational and assessment-oriented nature of the project while remaining simple and easy to understand.
+The project titled "Online Quiz Application" was selected because it clearly represents the system’s purpose. The application provides a digital platform where users can attempt quizzes, evaluate their knowledge, and receive instant results. It is designed for educational and training purposes, making assessments simple, fast, and automated.
 
 Scope of the Project
 
-The Online Quiz Application aims to modernize traditional quiz and examination methods by providing a web-based solution. The system can be used by educational institutions, training centers, organizations, and individuals for conducting assessments, practice tests, and knowledge evaluation activities.
-
-
----
+The Online Quiz Application modernizes traditional examination methods by providing a web-based solution. It can be used by schools, colleges, coaching centers, and organizations for conducting quizzes, practice tests, and online assessments.
 
 Requirement Gathering
 
-Requirement gathering is the process of identifying and analyzing the needs of users and stakeholders before developing the application.
+Requirement gathering involves identifying user needs and system requirements before development.
 
 Functional Requirements
-
-User Registration and Login
-
-Users should be able to create an account.
-
-Existing users should be able to log in securely.
-
-Password validation should be implemented.
-
-
-Quiz Management
-
-Admin can create new quizzes.
-
-Admin can edit and delete quizzes.
-
-Questions can be added, updated, or removed.
-
-
-Question Management
-
-Support for multiple-choice questions.
-
-Storage of correct answers.
-
-Categorization of questions by subject or topic.
-
-
-Quiz Participation
-
-Users can select and attempt quizzes.
-
-Questions should be displayed clearly.
-
-Users can submit answers before the timer expires.
-
-
-Evaluation System
-
-Automatic answer verification.
-
-Instant score calculation.
-
-Result generation after submission.
-
-
-Report Generation
-
-Display quiz scores.
-
-Store quiz history.
-
-Generate performance reports.
-
-
-
----
-
+User registration and login system
+Quiz creation and management by admin
+Multiple-choice question support
+Quiz participation by users
+Automatic evaluation and scoring
+Result generation and display
 Non-Functional Requirements
-
-Performance
-
-The system should respond quickly to user requests.
-
-Quiz loading time should be minimal.
-
-
-Security
-
-User data must be protected.
-
-Secure authentication should be implemented.
-
-Unauthorized access should be restricted.
-
-
-Reliability
-
-The application should operate consistently without crashes.
-
-Data should be stored accurately.
-
-
-Usability
-
-Simple and intuitive interface.
-
-Easy navigation for all users.
-
-
-Scalability
-
-The system should support multiple users simultaneously.
-
-Additional features can be integrated in the future.
-
-
-
----
-
+Fast response time
+Secure authentication system
+Reliable and error-free performance
+User-friendly interface
+Scalable system for future updates
 Objective Definition
-
 Main Objective
 
-The primary objective of the Online Quiz Application is to create a digital platform that enables users to participate in quizzes online while providing immediate evaluation and feedback.
+To develop a web-based Online Quiz Application that allows users to take quizzes and receive instant evaluation results.
 
 Specific Objectives
-
-1. To automate the quiz conduction process.
-
-
-2. To eliminate manual evaluation and scoring.
-
-
-3. To provide instant feedback to users.
-
-
-4. To improve learning through self-assessment.
-
-
-5. To maintain records of quiz attempts and results.
-
-
-6. To create a secure and reliable examination environment.
-
-
-7. To support educational institutions in conducting online assessments.
-
-
-8. To increase accessibility by allowing users to take quizzes from any location.
-
-
-9. To reduce paper usage and administrative effort.
-
-
-10. To provide analytical insights into user performance.
-
-
-
-
----
-
+Automate quiz conduction and evaluation
+Reduce manual assessment work
+Provide instant feedback to users
+Improve learning through self-assessment
+Maintain quiz history and records
+Ensure secure and reliable access
 User Identification
-
-The Online Quiz Application involves different types of users, each having specific roles and responsibilities.
-
 Administrator
-
-Responsibilities
-
-Manage the entire system.
-
-Create and update quizzes.
-
-Add, edit, and delete questions.
-
-Monitor user activities.
-
-View quiz reports and statistics.
-
-Manage user accounts.
-
-
-Permissions
-
-Full access to all modules.
-
-Database management capabilities.
-
-Report generation privileges.
-
-
-
----
-
+Manage users
+Create and manage quizzes
+Add and update questions
+View reports and results
+Monitor system activity
 Student/User
-
-Responsibilities
-
-Register and log in.
-
-Browse available quizzes.
-
-Attempt quizzes.
-
-Submit answers.
-
-View results and scores.
-
-
-Permissions
-
-Access assigned quizzes.
-
-View personal performance reports.
-
-Update personal profile information.
-
-
-
----
-
+Register and login
+Attempt quizzes
+Submit answers
+View results and performance
 Module Identification
-
-The Online Quiz Application is divided into several modules to ensure efficient development and maintenance.
-
 1. User Authentication Module
 
-Purpose
-
-Handles user registration, login, and account security.
-
-Features
-
-User registration
-
-User login
-
-Password encryption
-
-Logout functionality
-
-Profile management
-
-
-
----
+Handles user registration, login, and security.
 
 2. Quiz Management Module
 
-Purpose
-
-Allows administrators to create and manage quizzes.
-
-Features
-
-Create quiz
-
-Edit quiz
-
-Delete quiz
-
-Assign quiz categories
-
-Set quiz duration
-
-
-
----
+Used by admin to create, update, and delete quizzes.
 
 3. Question Management Module
 
-Purpose
-
-Manages the quiz questions stored in the system.
-
-Features
-
-Add questions
-
-Edit questions
-
-Delete questions
-
-Set correct answers
-
-Organize questions by category
-
-
-
----
+Manages MCQ questions and correct answers.
 
 4. Quiz Attempt Module
 
-Purpose
-
-Provides the interface for users to participate in quizzes.
-
-Features
-
-Display questions
-
-Answer selection
-
-Timer management
-
-Navigation between questions
-
-Quiz submission
-
-
-
----
+Allows users to attend quizzes with timer and navigation.
 
 5. Evaluation Module
 
+Automatically checks answers and calculates scores.
+
+6. Result Module
+
+Displays quiz results and performance history.
+
+7. Admin Module
+
+Provides full control over system operations.
+
+UML DIAGRAM DOCUMENTATION
+Overview
+
+UML (Unified Modeling Language) is used to represent the structure and behavior of the Online Quiz Application. It helps in understanding system design before implementation.
+
+1. Use Case Diagram
+Actors:
+Admin
+Student/User
+Admin Use Cases:
+Login
+Manage Users
+Create Quiz
+Add Questions
+Edit/Delete Quiz
+View Reports
+Student Use Cases:
+Register
+Login
+Attempt Quiz
+View Questions
+Submit Answers
+View Result
 Purpose
 
-Automatically evaluates quiz responses.
+Represents interaction between users and system functionalities.
 
-Features
+2. Class Diagram
+Classes:
 
-Answer verification
+User
 
-Score calculation
+user_id, name, email, password
+register(), login(), attemptQuiz()
 
-Result generation
+Admin (inherits User)
 
-Performance analysis
+admin_id
+createQuiz(), addQuestion(), deleteQuiz(), viewReports()
 
+Quiz
 
+quiz_id, title, duration
+startQuiz()
 
----
+Question
 
-6. Dashboard Module
+question_id, question_text, options, correct_answer
 
-Purpose
+Result
 
-Displays important information and statistics.
+result_id, score, total_questions
+calculateScore()
+Relationships:
+Admin inherits User
+User attempts Quiz
+Quiz contains multiple Questions
+Quiz generates Result
+Result belongs to User
+3. Activity Flow (Optional UML)
 
-Features
-
-User dashboard
-
-Quiz statistics
-
-Recent quiz attempts
-
-Performance summaries
-
-Progress tracking
-
-
-
----
-
-7. Reporting Module
-
-Purpose
-
-Generates reports related to quiz performance.
-
-Features
-
-Individual performance reports
-
-Quiz-wise reports
-
-Score summaries
-
-Result history
-
-
-
----
-
-8. Admin Module
-
-Purpose
-
-Provides administrative control over the system.
-
-Features
-
-User management
-
-Quiz management
-
-Report viewing
-
-System monitoring
-
-Data maintenance
-
-
-
----
+Login → Select Quiz → Attempt Questions → Submit → View Result
 
 Expected Outcomes
-
-Efficient online quiz management.
-
-Faster evaluation process.
-
-Improved user learning experience.
-
-Accurate result generation.
-
-Secure data management.
-
-Better accessibility for students and educators.
-
-Reduced administrative workload.
-
-Enhanced performance tracking and reporting 
+Automated quiz system
+Faster evaluation process
+Accurate results generation
+Improved learning experience
+Secure and scalable platform
+Reduced manual work
