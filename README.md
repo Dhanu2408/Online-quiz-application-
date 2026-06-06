@@ -152,3 +152,70 @@ Accurate results generation
 Improved learning experience
 Secure and scalable platform
 Reduced manual work
+
+Data Requirement Analysis
+Data Requirement Analysis identifies the data needed for the successful operation of the Online Quiz Application. The system stores and manages information related to users, quizzes, questions, answers, and results.
+User Data
+Stores information about registered users.
+Fields:
+User ID
+Name
+Email Address
+Password
+Role (Admin/User)
+Registration Date
+Quiz Data
+Stores details of available quizzes.
+Fields:
+Quiz ID
+Quiz Title
+Description
+Duration
+Total Marks
+Creation Date
+Question Data
+Stores quiz questions and answer options.
+Fields:
+Question ID
+Quiz ID
+Question Text
+Option A
+Option B
+Option C
+Option D
+Correct Answer
+Quiz Attempt Data
+Stores information about user quiz participation.
+Fields:
+Attempt ID
+User ID
+Quiz ID
+Start Time
+End Time
+Submitted Answers
+Result Data
+Stores quiz evaluation results.
+Fields:
+Result ID
+User ID
+Quiz ID
+Score Obtained
+Total Marks
+Percentage
+Result Status
+Data Relationships
+One user can attempt multiple quizzes.
+One quiz can contain multiple questions.
+Each question belongs to a specific quiz.
+Each quiz attempt generates one result.
+Results are associated with both the user and the quiz.
+Data Security Requirements
+User passwords should be stored in encrypted form.
+Only authorized administrators can manage quizzes and questions.
+User data must be protected from unauthorized access.
+Regular backups should be maintained to prevent data loss.
+Expected Data Volume
+Hundreds to thousands of user records.
+Multiple quizzes with numerous questions.
+Large amounts of quiz attempt and result data over time.
+Scalable database design to support future growth.
