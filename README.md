@@ -219,3 +219,101 @@ Hundreds to thousands of user records.
 Multiple quizzes with numerous questions.
 Large amounts of quiz attempt and result data over time.
 Scalable database design to support future growth.
+Data Requirement Analysis
+
+Data Requirement Analysis is the process of identifying, collecting, storing, and managing the data required for the successful operation of the Online Quiz Application. The system relies on accurate and secure data to perform user authentication, quiz management, evaluation, and result generation.
+
+User Data
+
+This data stores information about registered users of the system.
+
+Attributes:
+
+- User ID
+- Name
+- Email Address
+- Password
+- User Role (Admin/User)
+- Registration Date
+
+Quiz Data
+
+This data contains details of quizzes created by the administrator.
+
+Attributes:
+
+- Quiz ID
+- Quiz Title
+- Quiz Description
+- Duration
+- Total Marks
+- Creation Date
+
+Question Data
+
+This data stores quiz questions and answer options.
+
+Attributes:
+
+- Question ID
+- Quiz ID
+- Question Text
+- Option A
+- Option B
+- Option C
+- Option D
+- Correct Answer
+
+Quiz Attempt Data
+
+This data records user participation in quizzes.
+
+Attributes:
+
+- Attempt ID
+- User ID
+- Quiz ID
+- Start Time
+- End Time
+- Submitted Answers
+
+Result Data
+
+This data stores quiz evaluation results.
+
+Attributes:
+
+- Result ID
+- User ID
+- Quiz ID
+- Score Obtained
+- Total Marks
+- Percentage
+- Result Status
+
+Data Relationships
+
+- One user can attempt multiple quizzes.
+- One quiz can contain multiple questions.
+- Each question belongs to one quiz.
+- Each quiz attempt generates a result.
+- Results are linked to both users and quizzes.
+
+Data Security Requirements
+
+- Passwords must be stored in encrypted form.
+- Access to administrative functions should be restricted.
+- User information must be protected from unauthorized access.
+- Regular database backups should be maintained.
+- Data integrity and confidentiality must be ensured.
+
+Expected Data Volume
+
+- Hundreds or thousands of user records.
+- Multiple quizzes with numerous questions.
+- Large amounts of quiz attempt and result data.
+- Database structure should support future expansion and scalability.
+
+Purpose
+
+The Data Requirement Analysis ensures that all necessary information is properly stored, managed, and secured. It helps in designing an efficient database structure that supports smooth quiz operations, accurate evaluation, and reliable result generation.
