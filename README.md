@@ -317,3 +317,14 @@ Expected Data Volume
 Purpose
 
 The Data Requirement Analysis ensures that all necessary information is properly stored, managed, and secured. It helps in designing an efficient database structure that supports smooth quiz operations, accurate evaluation, and reliable result generation.
+
+### Entity Relationship (ER) Diagram Description
+
+The Entity Relationship (ER) Diagram of the Online Quiz Application illustrates the database structure and the relationships between different entities involved in the system. The application consists of six main entities: **User**, **Admin**, **Quiz**, **Question**, **Option**, and **Result**.
+
+The **Admin** entity is responsible for creating, updating, and managing quizzes within the system. Each **Quiz** contains multiple questions, establishing a one-to-many relationship between Quiz and Question. Every **Question** can have multiple answer options, creating a one-to-many relationship between Question and Option. Among these options, one or more may be marked as the correct answer.
+
+The **User** entity stores information about registered participants who can log in and attempt quizzes. A user can attempt multiple quizzes, and each quiz can be attempted by multiple users. The outcomes of these attempts are stored in the **Result** entity, which maintains details such as score obtained, total marks, and the date of the attempt. The Result entity acts as a bridge between User and Quiz, recording the performance of users in specific quizzes.
+
+The ER diagram ensures proper organization of data, minimizes redundancy, and maintains data integrity by using primary keys and foreign keys to establish relationships among entities. This structured database design enables efficient quiz management, user participation, automatic evaluation, and result tracking within the Online Quiz Application.
+
